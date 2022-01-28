@@ -1,12 +1,17 @@
 class Score:
-    
-    def __init__(self):
 
-
+    def __init__(self, score = 300):
+        self.score = score
         self.guess = ""
-        self.new_card = 0
         self.old_card = 0
+        self.new_card = 0
 
+    def update_score(self, add):
+        if add:
+            self.score += 100
+        else:
+            self.score -= 75
+    
 
     def determine_guess(self):
         """This function calls other functions to determine if
