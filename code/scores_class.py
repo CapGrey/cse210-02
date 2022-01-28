@@ -1,6 +1,3 @@
-from re import T
-
-
 class Score:
     
     def __init__(self):
