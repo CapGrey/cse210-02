@@ -36,18 +36,6 @@ class Score:
             else:
                 return False
         
-        def guess_is_equal_to(self):
-            """Determines if the user's guess is equal to
-            the value of the card.
-            returns true if the new_card is equal to the old_card.
-            """
-            if self.new_card == self.old_card:
-                return True
-
-            else:
-                return False
-
-        
         # Determine if the guess is higher, lower, or equal to.
         # Determine if the guess is correct. 
         if self.guess.lower() == "higher":
@@ -56,10 +44,6 @@ class Score:
         
         elif self.guess.lower() == "lower":
             if guess_is_lower(self):
-                return True
-        
-        elif self. guess.lower() == "equal to":
-            if guess_is_equal_to(self):
                 return True
         
         else:
