@@ -11,7 +11,7 @@ class Card_generator:
         self.top_card = random.randint(1,13)
 
     def show_top_card(self):
-        print(f"The card is: {self.top_card}")
+        print(f"The card is: {self.new_card}")
 
     def show_bottom_card(self):
         print(f"Next card was: {self.top_card}")
