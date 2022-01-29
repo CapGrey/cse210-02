@@ -4,8 +4,6 @@ from card_generator_class import Card_generator
 class controler:
 
     def __init__(self):
-
-        
         score = Score()
         card = Card_generator()
         card.create_card()
